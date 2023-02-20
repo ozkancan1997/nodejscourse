@@ -19,4 +19,5 @@ let inputC=(userInput)=>{
 rl.question(`What is ${num1} times ${num2}?\n`, inputC);
 
 rl.on('close', ()=> console.log("Correct"));
+
 rl.on('line', inputC);
