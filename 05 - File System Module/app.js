@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs =  require('fs');
 //code asynchronous, works different every time
 
 // fs.writeFile('./example.txt', 'Example text for file creating',(err)=>{
