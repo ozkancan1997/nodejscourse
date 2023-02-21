@@ -1,0 +1,2 @@
+Example text for file creating
+Appended data.
