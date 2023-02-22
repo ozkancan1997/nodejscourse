@@ -1,0 +1,19 @@
+{
+  "name": "example_package",
+  "version": "1.0.0",
+  "description": "for tutorial",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozkancan1997/nodejscourse.git"
+  },
+  "author": "voyager",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ozkancan1997/nodejscourse/issues"
+  },
+  "homepage": "https://github.com/ozkancan1997/nodejscourse#readme"
+}
