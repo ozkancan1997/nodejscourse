@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    label{
+        left:15px;
+        position: absolute;
+    }
+
+    input{
+        right:15px;
+        position: absolute;
+    }
+
+    div{
+        width: 20%;
+        height: 175px;
+        display: inline-block;
+        position: relative;
+        left: 40%;
+        margin-top: 50px;
+        border: 1px solid black;
+        padding-top: 25px;
+    }
+
+    button{
+        left:15px;
+        position: absolute;
+    }
+
+
+</style>
+
+<body>
+    <form action="/success" method="post">
+    <div>
+        <label for="email">Email: </label>
+        <input type="email" name="email" placeholder="enter email adress"><br><br>
+        <label for="pass">Password: </label>
+        <input type="password" name="pass" placeholder="enter password"><br><br>
+        <button type="submit">Submit</button>
+
+    </div>
+    </form>
+</body>
+</html>
