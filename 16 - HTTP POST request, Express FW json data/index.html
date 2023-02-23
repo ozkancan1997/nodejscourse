@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    label{
+        left:15px;
+        position: absolute;
+    }
+
+    input{
+        right:15px;
+        position: absolute;
+    }
+
+    div{
+        width: 20%;
+        height: 175px;
+        display: inline-block;
+        position: relative;
+        left: 40%;
+        margin-top: 50px;
+        border: 1px solid black;
+        padding-top: 25px;
+    }
+
+    button{
+        left:15px;
+        position: absolute;
+    }
+
+
+</style>
+
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(()=>{
+      $('#form').submit((e)=>{
+        e.preventDefault();
+        $.ajax({
+          url : '/post',
+          type : 'post',
+          contentType : 'application/json',
+          data : JSON.stringify($('#form').serializeArray()),
+          success : (response)=>{
+            console.log('successfully got response');
+            console.log(response);
+          }
+        });
+      });
+    });
+  </script>
+
+<body>
+    <form id="form">
+    <div>
+        <label for="email">Email: </label>
+        <input type="email" name="email" placeholder="enter email adress"><br><br>
+        <label for="pass">Password: </label>
+        <input type="password" name="pass" placeholder="enter password"><br><br>
+        <button type="submit">Submit</button>
+
+    </div>
+    </form>
+</body>
+</html>
